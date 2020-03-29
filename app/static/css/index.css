@@ -1,0 +1,22 @@
+body{
+    background: #132639;
+}
+#header{
+    margin:10px 0 20px 0;
+}
+.btn-card {
+    padding: 0;
+}
+.left-info{
+    font-weight: bold;
+    font-size: 16pt;
+    color: #f9d71c;
+}
+.label-titulo{
+    color: white;
+    font-weight: bold;
+}
+.center-me {
+    margin: 0 auto;
+
+}
