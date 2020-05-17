@@ -1,0 +1,49 @@
+html, body{
+    height: 100%;
+}
+html #all{
+    height: 100%;
+}
+#all{
+    min-height: 100%;
+    position: relative;
+}
+#content{
+    padding-bottom: 30px;
+}
+.center{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flashes{
+    text-align: center;
+    padding: 10px;
+    margin: 0 0;
+    background: #FFD6A3;
+    color: #000;
+    width: 400px;
+}
+#footer{
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    position: fixed;
+    bottom: 0;
+}
+.area{
+    margin: 30px;
+}
+.icon{
+    margin: 5px;
+}
+.update-icon{
+    color: #000;
+} 
+.delete-icon{
+    color: red;
+}

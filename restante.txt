@@ -1,3 +1,0 @@
-Validar cliente
-Validar no server
-Criar objecto

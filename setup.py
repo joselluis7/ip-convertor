@@ -15,6 +15,5 @@ setuptools.setup(
 	packages=setuptools.find_packages(),
 	classifiers=[
 		"Programming Language :: Python :: 3 :: 2"
-
 	]
 )

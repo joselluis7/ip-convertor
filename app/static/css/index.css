@@ -1,8 +1,11 @@
-body{
-    background: #132639;
+*{
+    text-decoration: none;
 }
-#header{
-    margin:10px 0 20px 0;
+body{
+    background: #00A169;
+}
+.btn-link{
+    text-decoration: none;
 }
 .btn-card {
     padding: 0;
@@ -19,4 +22,10 @@ body{
 .center-me {
     margin: 0 auto;
 
+}
+.inputs{
+    padding: 20px;
+}
+#tab-content{
+    background: white;
 }
