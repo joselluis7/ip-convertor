@@ -1,7 +1,7 @@
 import math
 
 from app.constants import CLASS_A_RANGE, CLASS_B_RANGE, CLASS_C_RANGE, BITMASK_TO_MASK
-from app.utils import  binary_formater, decimal_to_binary
+from app.utils import  binary_formater, decimal_to_binary, octet_formater
 
 
 class Ip:
