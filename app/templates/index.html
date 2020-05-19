@@ -42,8 +42,8 @@
                                     <label class="font-weight-bold" for="">NETMASK:</label><span>{{ decimal.mask}} </span><br>
                                     <label class="font-weight-bold" for="">NETWORK:</label><span>{{ decimal.network }}</span> <br>
                                     <label class="font-weight-bold"  for="">BROADCAST:</label><span>{{ decimal.broadcast }}</span><br>
-                                    <label class="font-weight-bold"  for="">FIRST IP:</label><span>{{ decimal.last_host }}</span><br>
-                                    <label class="font-weight-bold"  for="">LAST IP:</label><span>{{ decimal.first_host }}</span> <br>
+                                    <label class="font-weight-bold"  for="">FIRST IP:</label><span>{{ decimal.first_host }}</span><br>
+                                    <label class="font-weight-bold"  for="">LAST IP:</label><span>{{ decimal.last_host }}</span> <br>
                                 {% else %}
                                     <label class="font-weight-bold" for="">IP ADDRESS:</label> <br>
                                     <label class="font-weight-bold" for="">NETMASK:</label><br>
@@ -67,12 +67,21 @@
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
-                            <label class="font-weight-bold" for="">IP ADDRESS:</label><span>{{ decimal.ip }}</span><br>
-                            <label class="font-weight-bold" for="">NETMASK:</label><span>{{ decimal.network}} </span><br>
-                            <label class="font-weight-bold" for="">NETWORK:</label><span>{{ decimal.network }}</span> <br>
-                            <label class="font-weight-bold"  for="">BROADCAST:</label><span>{{ decimal.broadcast }}</span><br>
-                            <label class="font-weight-bold"  for="">FIRST IP:</label><span>{{ decimal.first_ip }}</span><br>
-                            <label class="font-weight-bold"  for="">LAST IP:</label><span>{{ decimal.last_ip }}</span> <br>
+                        {% if binary  %}
+                            <label class="font-weight-bold" for="">IP ADDRESS:</label><span>{{ binary.ip }}</span><br>
+                            <label class="font-weight-bold" for="">NETMASK:</label><span>{{ binary.mask}} </span><br>
+                            <label class="font-weight-bold" for="">NETWORK:</label><span>{{ binary.network }}</span> <br>
+                            <label class="font-weight-bold"  for="">BROADCAST:</label><span>{{ binary.broadcast }}</span><br>
+                            <label class="font-weight-bold"  for="">FIRST IP:</label><span>{{ binary.first_host }}</span><br>
+                            <label class="font-weight-bold"  for="">LAST IP:</label><span>{{ binary.last_host }}</span> <br>
+                        {% else %}
+                            <label class="font-weight-bold" for="">IP ADDRESS:</label> <br>
+                            <label class="font-weight-bold" for="">NETMASK:</label><br>
+                            <label class="font-weight-bold" for="">NETWORK:</label><br>
+                            <label class="font-weight-bold"  for="">BROADCAST:</label><br>
+                            <label class="font-weight-bold"  for="">FIRST IP:</label><br>
+                            <label class="font-weight-bold"  for="">LAST IP:</label><br>
+                        {% endif %}
                         </div>
                     </div>
                 </div>

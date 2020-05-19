@@ -1,5 +1,5 @@
 #coding:utf-8
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request
 from .models.ip import Decimal, Binary  
 from .constants import BITMASK_TO_MASK
 
