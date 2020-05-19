@@ -86,3 +86,24 @@ class Ip:
         self.network.clear()
 
 
+class Decimal(Ip):
+
+    def __init__(self, ip,mask):
+        super().__init__(ip, mask)
+        self.ip = octet_formater(self.ip)
+        self.network = octet_formater(self.network)
+        self.mask = octet_formater(self.mask)
+        self.first_host = octet_formater(self.first_host)
+        self.last_host = octet_formater(self.last_host)
+        self.broadcast = octet_formater(self.broadcast)
+
+class Binary(Ip):
+    
+    def __init__(self, ip,mask):
+        super().__init__(ip, mask)
+        self.ip = octet_formater(binary_formater(self.ip))
+        self.network = octet_formater(binary_formater(self.network))
+        self.mask = octet_formater(binary_formater(self.mask))
+        self.first_host = octet_formater(binary_formater(self.first_host))
+        self.last_host = octet_formater(binary_formater(self.last_host))
+        self.broadcast = octet_formater(binary_formater(self.broadcast))
