@@ -1,10 +1,12 @@
-Package      Version
------------- -------
-click        7.1.2  
-Flask        1.1.2  
-itsdangerous 1.1.0  
-Jinja2       2.11.2 
-MarkupSafe   1.1.1  
-pip          19.1.1 
-setuptools   41.6.0 
-Werkzeug     1.0.1  
+attrs==20.2.0
+click==7.1.2
+Flask==1.1.2
+importlib-metadata==2.0.0
+itsdangerous==1.1.0
+Jinja2==2.11.2
+jsonschema==3.2.0
+MarkupSafe==1.1.1
+pyrsistent==0.17.3
+six==1.15.0
+Werkzeug==1.0.1
+zipp==3.3.0
