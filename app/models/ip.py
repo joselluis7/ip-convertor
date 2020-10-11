@@ -77,9 +77,22 @@ class Ip:
                 self.class_ = "B"
             else:
                 self.class_= "C"
+    @staticmethod
+    def get_dictionary(self):
+        return {
+                'ip': self.ip,
+                'network': self.network,
+                'broadcast': self.broadcast,
+                'class':self.class_,
+                'hosts_number':self.hosts_number,
+                'last_host':self.last_host,
+                'first_host':self.first_host,
+                'prefix':self.bit_mask,
+                'mascara':self.mask
+        }
 
     def clear(self):
-        """Clear some list varible to avoid repeatment"""
+        """Clear some list variable to avoid repeatment"""
         self.last_host.clear()
         self.first_host.clear()
         self.broadcast.clear()
