@@ -1,7 +1,11 @@
 import os
 
+from base64 import b64decode
+
+secret = b64decode( os.urandom(32)).decode('utf-8')
+
 class Config:
-    SECRET_KEY =  os.urandom(32)
+    SECRET_KEY = secret
     DEBUG = True
 
 class DevelopmentConfig(Config):
