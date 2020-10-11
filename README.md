@@ -12,5 +12,5 @@ Features
 - [ ] Octal format
 - [ ] Hexadecimal format.
 - [ ] Subnet Calc.
-- [x] RestFull Api.
+- [x] Api Rest.
 - [ ] Apply Unit Tests.
