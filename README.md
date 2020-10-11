@@ -1,5 +1,5 @@
 # IP-CONVERTOR
-A small app to calculate subnets, and convert ip addresses built with flask.
+A small app to calculate subnets, and convert ip addresses built in flask.
 
 [See it in action](https://ipconvertor.com)
 
