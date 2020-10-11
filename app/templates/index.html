@@ -13,14 +13,14 @@
         </div>
     </div>
     <div class="center inputs">
-        <form class="form-inline" method="POST" action="/">
+        <form class="form-inline" id="form">
             <div class="form-group mx-sm-3 mb-2">
-                <input id="ipInput" type="text" class="form-control" name="ip" aria-describedby="emailHelp" placeholder="Eg: 192.168.1.1">
+                <input id="ipInput" type="text" class="form-control" name="ip" placeholder="Eg: 192.168.1.1">
             </div>
             <div class="form-group mx-sm-3 mb-2">
-                <input id="maskInput" type="text" class="form-control" name="mask" aria-describedby="emailHelp" placeholder="Eg: 24 or 255.255.255.0">  
+                <input id="maskInput" type="text" class="form-control" name="mask" placeholder="Eg: 24 or 255.255.255.0">  
             </div>
-            <button id="submitButton" type="submit" class="btn btn-primary mb-2">  GET  </button>
+            <input id="submitButton" value="GET" type="submit" class="btn btn-primary mb-2" />
         </form>
     </div>
     

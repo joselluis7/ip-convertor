@@ -7,26 +7,27 @@ $(document).ready(function(){
             console.log('Agora teste vazio')
             return false
         }else{
-            console.log('Agora teste vazio')
             $('#validateModal').modal('toggle')
             return true
         }
     }); 
-}); 
 
-/*
-$('form').on('submit', function(event){
-    console.log('Agora teste entrou')
-    $.ajax({
-        type: 'POST',
-        dataType: "json",
-        contentType: "application/json",
-        data:JSON.stringify(data_dict),
-        url: 'https://localhost:5000/calc',
-        success: function(data){
-            console.log('Agora teste ')
+    $('form').submit( function(event){
+        var ip = {
+            ipValue: $("#ipInput").val(),
+            maskValue:$("#maskInput").val()
         }
-    });
-    event.preventDefault();
-});    
-*/
+        $.ajax({    
+            type: 'POST',
+            dataType: "json",
+            contentType: "application/json",
+            url: '/',
+            data:JSON.stringify(ip),
+            success: function(data){
+                console.log('Agora funcionou ')
+                //put here the write html
+                
+            }
+        });
+    });    
+});   

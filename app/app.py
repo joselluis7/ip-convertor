@@ -20,16 +20,16 @@ def index():
 
     decimal = None
 
-    request_data = request.get_json('mask')
-    mask = request_data['mask']
-    print("TYPE: ",type(mask))
+    request_data = request.get_json('maskValue')
+    mask = request_data['maskValue']
     #: a before check if mask was given in bitmask form and
     #: replace it for his respective value in decimal form
     mask = BITMASK_TO_MASK[mask] if mask in BITMASK_TO_MASK else mask
     
     try:
-        decimal = Decimal(request_data['ip'],mask)
-        binary = Binary(request_data['ip'], mask)
+        decimal = Decimal(request_data['ipValue'],mask)
+        binary = Binary(request_data['ipValue'], mask)
+        print('EXECUTEI')
         return jsonify({
                         'decimal': Decimal.get_dictionary(decimal),
                         'binary': Binary.get_dictionary(binary)
