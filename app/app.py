@@ -2,6 +2,7 @@ from flask import Flask, render_template, request,jsonify, make_response
 
 from .models.ip import Decimal, Binary  
 from .constants import BITMASK_TO_MASK
+from .jsonvalidate import validate_data
 
 
 
@@ -21,7 +22,10 @@ def index():
     decimal = None
 
     request_data = request.get_json('maskValue')
+    if validate_data(request_data):
+        return make_response({'error':'invalid json'},400)
     mask = request_data['maskValue']
+
     #: a before check if mask was given in bitmask form and
     #: replace it for his respective value in decimal form
     mask = BITMASK_TO_MASK[mask] if mask in BITMASK_TO_MASK else mask
