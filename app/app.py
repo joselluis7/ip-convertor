@@ -10,10 +10,8 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def get_all():
-    decimal = None
-    binary = None
 
-    return render_template('index.html', decimal=decimal, binary=binary)
+    return render_template('index.html')
 
 
 @app.route('/', methods=['POST'])
@@ -37,7 +35,7 @@ def index():
         print(Decimal.get_dictionary(decimal))
         return jsonify({
                         'decimal': Decimal.get_dictionary(decimal),
-                        'decimal': Decimal.get_dictionary(decimal)
+                        'decimal': Binary.get_dictionary(binary)
                         })
     except ValueError as error:
         return make_response({'error':'mask value or ip incorrect'}, 422)
