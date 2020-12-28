@@ -33,10 +33,11 @@ def index():
     try:
         decimal = Decimal(request_data['ipValue'],mask)
         binary = Binary(request_data['ipValue'], mask)
-        print('EXECUTEI')
+
+        print(Decimal.get_dictionary(decimal))
         return jsonify({
                         'decimal': Decimal.get_dictionary(decimal),
-                        'binary': Binary.get_dictionary(binary)
+                        'decimal': Decimal.get_dictionary(decimal)
                         })
     except ValueError as error:
         return make_response({'error':'mask value or ip incorrect'}, 422)
