@@ -37,55 +37,46 @@
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                            {% if decimal  %}
                             <table>
                                 <tr>
                                     <td> IP ADDRESS:</td>
-                                    <td>{{ decimal.ip }}    </td>
-                                    <td>{{ binary.ip }}</td>
+                                    <td id=decimal-ip></td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td> NETMASK:</td>
-                                    <td>{{ decimal.mask }}</td>
-                                    <td>{{ binary.mask }}</td>
+                                    <td id=decimal-mask ></td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td> NETWORK</td>
-                                    <td>{{ decimal.network }}/{{ decimal.bit_mask }}</td>
-                                    <td>{{ binary.network }} </td>
+                                    <td id=decimal-network></td>
+                                    <td></td>
                                 </tr>
                                 <tr>
                                     <td> BROADCAST:</td>
-                                    <td>{{ decimal.broadcast }}</td>
-                                    <td>{{ binary.broadcast }} </td>
+                                    <td id=decimal-broadcast ></td>
+                                    <td> </td>
                                 </tr>
                                 <tr>
                                     <td>FIRST IP:</td>
-                                    <td>{{ decimal.first_host }}</td>
-                                    <td>{{ binary.first_host }} </td>
+                                    <td id=decimal-first_host ></td>
+                                    <td> </td>
                                 </tr>
                                 <tr>
                                     <td> LAST IP:</td>
-                                    <td>{{ decimal.last_host }}</td>
-                                    <td>{{ binary.last_host }} </td>
+                                    <td id=decimal-first_host ></td>
+                                    <td> </td>
                                 </tr>
                                 <tr>
                                     <td>HOSTS:</td>
-                                    <td>{{ decimal.hosts_number }}</td>
+                                    <td id=decimal-total_hosts ></td>
                                 </tr>
                                 <tr>
                                     <td>CLASS</td>
-                                    <td>{{ decimal.class_ }}</td>
-                                </tr>
-                                <tr>
-                                    <td>TYPE:</td>
-                                    <td>Private</td>
+                                    <td id=decimal-class ></td>
                                 </tr>
                             </table>
-                                    
-                                {% else %}
-                                    <h2 id="teste"> Introduza um ip</h2>
-                                {% endif %}
 
                         </div>
                     </div>
@@ -101,36 +92,34 @@
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
-                        {% if binary  %}
+
                         <table>
                         <tr>
                             <td> IP ADDRESS:</td>
-                            <td>{{ binary.ip }}    </td>
+                            <td>  </td>
                         </tr>
                         <tr>
                             <td> NETMASK:</td>
-                            <td>{{ binary.mask }}</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td> NETWORK</td>
-                            <td>{{ binary.network }}</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td> BROADCAST:</td>
-                            <td>{{ binary.broadcast }}</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>FIRST IP:</td>
-                            <td>{{ binary.first_host }}</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td> LAST IP:</td>
-                            <td>{{ binary.last_host }}</td>
+                            <td></td>
                         </tr>
                     </table>
-                        {% else %}
 
-                        {% endif %}
                         </div>
                     </div>
                 </div>
