@@ -88,7 +88,7 @@ class Ip:
                 'last_host':self.last_host,
                 'first_host':self.first_host,
                 'prefix':self.bit_mask,
-                'mascara':self.mask
+                'mask':self.mask
         }
 
     def clear(self):

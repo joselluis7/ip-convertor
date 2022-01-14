@@ -35,7 +35,7 @@ def index():
         print(Decimal.get_dictionary(decimal))
         return jsonify({
                         'decimal': Decimal.get_dictionary(decimal),
-                        'decimal': Binary.get_dictionary(binary)
+                        'binary': Binary.get_dictionary(binary)
                         })
     except ValueError as error:
         return make_response({'error':'mask value or ip incorrect'}, 422)
