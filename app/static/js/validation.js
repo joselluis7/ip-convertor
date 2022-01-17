@@ -16,12 +16,21 @@ $(document).ready(function(){
             url: '/',
             data:JSON.stringify(ip),
             success: function(data){
-                document.getElementById("decimal-ip").innerHTML = data.decimal.ip
-                document.getElementById("decimal-mask").innerHTML =  `${data.decimal.mask}/${data.decimal.prefix}`
-                document.getElementById("decimal-network").innerHTML = data.decimal.network
-                document.getElementById("decimal-broadcast").innerHTML = data.decimal.broadcast
-                console.log(data)
+                //for(let i = 0; i < data.length; i++) {
+                for (const property in data) {
+                    console.log(data);
                 
+                    document.getElementById(`${property}-ip`).innerHTML = data[property].ip
+                    document.getElementById(`${property}-mask`).innerHTML =  data[property].mask
+                    document.getElementById(`${property}-network`).innerHTML = data[property].network
+                    document.getElementById(`${property}-broadcast`).innerHTML = data[property].broadcast
+                    document.getElementById(`${property}-last`).innerHTML = data[property].first_host
+                    document.getElementById(`${property}-first`).innerHTML = data[property].last_host
+                    if ( property == "decimal"){
+                        document.getElementById(`${property}-mask`).innerHTML =  `${data[property].mask}/${data[property].prefix}`
+                        document.getElementById(`${property}-hosts`).innerHTML = data[property].hosts_number
+                    }        
+                } 
                 //$('#teste').html("Angola") //See before
             },
             error: function(){
