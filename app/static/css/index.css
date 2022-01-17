@@ -6,10 +6,41 @@ body{
 }
 .btn-link{
     text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+.btn{
+ text-decoration: none;
+
+}
+.btn-link:hover {
+    color: black;
+    text-decoration: none;
+
 }
 .btn-card {
     padding: 0;
 }
+
+  
+.label {
+    font-weight: bold;
+    color: #4974d1;
+
+    width: 45%;
+
+      
+}
+.result{
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-size: 11pt;
+    font-weight: bold;
+    
+
+}
+
 .left-info{
     font-weight: bold;
     font-size: 16pt;

@@ -17,8 +17,8 @@ $(document).ready(function(){
             data:JSON.stringify(ip),
             success: function(data){
                 document.getElementById("decimal-ip").innerHTML = data.decimal.ip
-                document.getElementById("decimal-mask").innerHTML = data.decimal.mask
-                document.getElementById("decimal-network").innerHTML = data.decimal.network + "/" + data.decimal.prefix
+                document.getElementById("decimal-mask").innerHTML =  `${data.decimal.mask}/${data.decimal.prefix}`
+                document.getElementById("decimal-network").innerHTML = data.decimal.network
                 document.getElementById("decimal-broadcast").innerHTML = data.decimal.broadcast
                 console.log(data)
                 
