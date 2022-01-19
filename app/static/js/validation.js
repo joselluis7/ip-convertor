@@ -16,10 +16,7 @@ $(document).ready(function(){
             url: '/',
             data:JSON.stringify(ip),
             success: function(data){
-                //for(let i = 0; i < data.length; i++) {
                 for (const property in data) {
-                    console.log(data);
-                
                     document.getElementById(`${property}-ip`).innerHTML = data[property].ip
                     document.getElementById(`${property}-mask`).innerHTML =  data[property].mask
                     document.getElementById(`${property}-network`).innerHTML = data[property].network
@@ -31,7 +28,6 @@ $(document).ready(function(){
                         document.getElementById(`${property}-hosts`).innerHTML = data[property].hosts_number
                     }        
                 } 
-                //$('#teste').html("Angola") //See before
             },
             error: function(){
                 console.log("something got wrong")
@@ -39,4 +35,4 @@ $(document).ready(function(){
         });
         event.preventDefault()
     });    
-});   
+}); 
