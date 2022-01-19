@@ -60,3 +60,12 @@ body{
 #tab-content{
     background: white;
 }
+
+.social{
+    font-size: 20px;
+    margin: 2px;
+    color: #fff;
+}
+.social:hover{
+    color: #303030;
+}
