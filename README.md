@@ -2,7 +2,7 @@
 
 A small app to calculate subnets, and convert ip addresses built in flask.
 
-[See it in action](https://ipconvertor.com)
+[See it in action](http://ipconvertor.pythonanywhere.com/)
 
 ## Examples
 
