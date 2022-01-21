@@ -26,6 +26,7 @@ $(document).ready(function(){
                     if ( property == "decimal"){
                         document.getElementById(`${property}-mask`).innerHTML =  `${data[property].mask}/${data[property].prefix}`
                         document.getElementById(`${property}-hosts`).innerHTML = data[property].hosts_number
+                        document.getElementById(`${property}-class`).innerHTML = data[property].class
                     }        
                 } 
             },
