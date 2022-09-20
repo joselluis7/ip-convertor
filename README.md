@@ -14,7 +14,7 @@ A small app to calculate subnets, and convert ip addresses built in flask.
 
 ## Contribute
 
-```pip install -r requirements.tx```
+```pip install -r requirements.txt```
 
 ## Features
 
